@@ -23,6 +23,6 @@ class Product(models.Model):
     description = models.TextField()
     price = models.IntegerField(validators=[MinValueValidator(1)])
     image = models.URLField(blank=True)
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField()
     stock_quantity = models.IntegerField(validators=[MinValueValidator(1)])
     category = models.CharField(max_length=64, choices=CATEGORY_CHOICES, default='NON')
