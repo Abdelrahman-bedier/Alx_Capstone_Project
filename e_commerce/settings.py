@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-dme*egd9u7g37!s)wtio(5i&iw4gxhd0ka35sv$%(lf!111053
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['Bedier.pythonanywhere.com']
 
 AUTH_USER_MODEL = 'products.Users'
 # Application definition
@@ -68,6 +68,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     
 ]
 
